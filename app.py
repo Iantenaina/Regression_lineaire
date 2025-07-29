@@ -20,7 +20,7 @@ def load_model():
 
 model = load_model()
 
-st.title("🏠 Prédiction du loyer mensuel à Antananarivo")
+st.title("Prédiction du loyer mensuel à Antananarivo")
 
 quartier_nom = st.selectbox("Quartier", quartiers_df["Nom_Fokontany"].tolist())
 
