@@ -49,7 +49,7 @@ input_data = pd.DataFrame({
     "type_logement": [type_logement]
 })
 
-if st.button("🔮 Estimer le loyer"):
+if st.button("Estimer le loyer"):
     input_encoded = pd.get_dummies(input_data)
     model_features = model.feature_names_in_
     input_encoded = input_encoded.reindex(columns=model_features, fill_value=0)
