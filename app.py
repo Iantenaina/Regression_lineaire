@@ -55,6 +55,6 @@ if st.button("🔮 Estimer le loyer"):
     input_encoded = input_encoded.reindex(columns=model_features, fill_value=0)
     prediction = model.predict(input_encoded)[0]
     if prediction < 0:
-        st.warning("⚠️ Le modèle prédit un loyer négatif, veuillez vérifier les entrées.")
+        st.warning(" Le modèle prédit un loyer négatif, veuillez vérifier les entrées.")
     else:
-        st.success(f"💰 Loyer mensuel prédit : {int(prediction):,} MGA")
+        st.success(f" Loyer mensuel prédit : {int(prediction):,} MGA")
