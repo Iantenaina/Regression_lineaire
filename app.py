@@ -58,3 +58,5 @@ if st.button("Estimer le loyer"):
         st.warning(" Le modèle prédit un loyer négatif, veuillez vérifier les entrées.")
     else:
         st.success(f" Loyer mensuel prédit : {int(prediction):,} MGA")
+
+    st.map(pd.DataFrame({'lat': [-18.897556], 'lon': [47.5134367]}))
